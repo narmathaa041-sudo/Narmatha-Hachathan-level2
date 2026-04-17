@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Activity Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>📋 Activity Tracker</h1>
+      <p id="progressText">0 / 0 Completed</p>
+      <progress id="progressBar" value="0" max="100"></progress>
+    </header>
+
+    <!-- Add Activity -->
+    <section class="add-section">
+      <input 
+        type="text" 
+        id="activityInput" 
+        placeholder="Enter new activity..." 
+      />
+      <button id="addBtn">Add</button>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="pending">Pending</button>
+      <button data-filter="completed">Completed</button>
+    </section>
+
+    <!-- Activity List -->
+    <ul id="activityList"></ul>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
